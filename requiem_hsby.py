@@ -316,10 +316,10 @@ class Database:
 # =====================================================================
 #  ARAYÜZ KATMANI
 # =====================================================================
-class PanatesPro:
+class RequiemHBYSPro:
     def __init__(self, root):
         self.root = root
-        self.root.title("Panates HBYS - Pro Sürüm")
+        self.root.title("Requiem HYBS - Yönetim Sistemi")
         self.root.geometry("1400x850")
 
         style = ttk.Style()
@@ -344,7 +344,7 @@ class PanatesPro:
         kutu = tk.Frame(self.giris_frame, bg="white", padx=40, pady=40)
         kutu.place(relx=0.5, rely=0.5, anchor="center")
 
-        tk.Label(kutu, text="PANATES HBYS", font=("Arial", 22, "bold"), fg="#2a5a75", bg="white").pack(pady=(0, 5))
+        tk.Label(kutu, text="REQUIEM HBYS", font=("Arial", 22, "bold"), fg="#2a5a75", bg="white").pack(pady=(0, 5))
         tk.Label(kutu, text="Hastane Bilgi Yönetim Sistemi", font=("Arial", 10), bg="white", fg="#555").pack(pady=(0, 20))
 
         tk.Label(kutu, text="Kullanıcı Adı:", bg="white", font=("Arial", 10)).pack(anchor="w")
@@ -1362,5 +1362,5 @@ class PanatesPro:
 # --- ÇALIŞTIRMA ---
 if __name__ == "__main__":
     root = tk.Tk()
-    app = PanatesPro(root)
+    app = RequiemHBYSPro(root)
     root.mainloop()
